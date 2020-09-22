@@ -16,12 +16,12 @@ spec:
     spec:
       containers:
         - name: locust-master
-          image: gcr.io/wh-service02/locust_new:0.7
+          image: gcr.io/[PROJECT_ID]/locust_test:1.0
           env:
             - name: LOCUST_MODE
               value: master
             - name: TARGET_HOST
-              value: http://34.121.0.225
+              value: [TARGET_HOST]
           ports:
             - name: loc-master-web
               containerPort: 8089
