@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: locust-master
-          image: gcr.io/[PROJECT_ID]/locust_test:1.0
+          image: gcr.io/[PROJECT_ID]/locust_new:1.0
           env:
             - name: LOCUST_MODE
               value: master
